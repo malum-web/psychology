@@ -7,20 +7,12 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: rgb(190, 189, 189);
-    border-radius: 50px;
-}
-  
-::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0);
-}
+    display: none;
+  }
   
 body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     width: 100vw;
     height: 200vh;
     background: url(./img/background.svg);
@@ -31,9 +23,9 @@ body {
 }
 
 nav {
-    height: 50px;
+    height: 200px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -73,10 +65,12 @@ li a {
 
 li a:hover {
     filter: brightness(1.2);
+    pointer-events: none;
 }
 
 li:hover {
-    background-color: rgba(235, 235, 235, 0.6);
+    filter: brightness(0.5);
+    pointer-events: none;
 }
 
 nav img {

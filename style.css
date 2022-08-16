@@ -63,8 +63,19 @@ li:hover {
     box-shadow: 0 0 5px 3px rgba(196, 150, 150, 0.6);
 }
 
-nav img {
-    float: left;
+.img_nav {
     height: 6rem;
-    margin: 1rem 0 0 1rem;
+    width: 6rem;
+    margin: 0.5rem 0 0 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.6);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img_nav img {
+    height: 4rem;
+    margin: auto;
 }

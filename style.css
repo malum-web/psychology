@@ -110,13 +110,16 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.6);
 }
 
 .main_text {
     width: 50%;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .main_text h1 {
@@ -131,13 +134,9 @@ li:hover {
 }
 
 .img_container {
-    background-color: rgba(255, 255, 255, 0.6);
-    /* padding: 2rem; */
     border-radius: 2%;
     width: 40%;
     text-align: center;
-    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.6);
-
 }
 .img_container img {
     width: 600px;

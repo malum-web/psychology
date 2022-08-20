@@ -27,6 +27,7 @@ html {
 body {
     width: 100vw;
     height: 200vh;
+    padding-top: 110px;
     background: url(./img/background.svg);
     background-attachment: fixed;
     background-position: center;
@@ -40,7 +41,10 @@ body {
 /* Nawigacja */
 
 nav {
-    /* height: 200px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 110px;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
@@ -102,22 +106,28 @@ li:hover {
 
 /* Main */
 
-.container {
+/* main {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    max-width: 100%;
     margin-top: 5rem;
 }
 
-.main {
+.main_text {
     width: 30%;
     text-align: center;
 }
 
-.main h1 {
+.main_text h1 {
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }

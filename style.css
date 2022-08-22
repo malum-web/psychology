@@ -15,7 +15,7 @@
   border-radius: 13px;
   background-clip: padding-box;
   border: 10px solid transparent;
-  color: rgba(196, 150, 150, 0.6);
+  color: rgba(89, 85, 87, 0.6);
 }
 
 *::-webkit-scrollbar-thumb {        
@@ -101,11 +101,13 @@ li:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* margin-top: 5rem; */
     height: calc(100vh - 100px);
 }
 
 .main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin-top: 2rem;
 }
@@ -129,7 +131,6 @@ li:hover {
 
 #about {
     height: calc(100vh - 100px);
-
 }
 
 
@@ -139,3 +140,61 @@ li:hover {
     align-items: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1270px) {
+    *::-webkit-scrollbar,
+    *::-webkit-scrollbar-thumb {
+    width: 0px;
+    border: 0px solid transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {        
+    box-shadow: inset 0 0 0 0px;
+    }
+
+    ul {
+        text-align: center;
+        float: none;
+    }
+
+    li {
+        margin-right: 1rem;
+    }
+
+    li a {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .img_nav {
+        display: none;
+    }
+
+    .container_main {
+        height: auto;
+        width: 100vw;
+        padding: 0 1rem;
+    }
+
+    .main_text h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        line-height: 70px;
+    }
+
+    .img_container img {
+        width: 300px;
+    }
+
+    #about {
+        height: auto;
+        width: 100vw;
+    }
+
+    .aboutme {
+        flex-direction: column-reverse;
+    }
+
+    .aboutme img {
+        width: 300px;
+    }
+}

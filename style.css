@@ -158,6 +158,10 @@ li:hover {
     box-shadow: inset 0 0 0 0px;
     }
 
+    nav {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
     ul {
         text-align: center;
         float: inline-start;
@@ -180,6 +184,12 @@ li:hover {
         height: auto;
         width: 100vw;
         padding: 0 1rem;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .main_text {
+        margin-top: 0;
     }
 
     .main_text h1 {
@@ -193,14 +203,15 @@ li:hover {
     }
 
     #about {
-        height: auto;
+        height: calc(100vh - 100px - 1rem);
         width: 100vw;
         display: flex;
         justify-content: center;
     }
 
     .aboutme {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding: 1rem;
     }
 
     .aboutme img {

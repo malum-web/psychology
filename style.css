@@ -131,6 +131,9 @@ li:hover {
 
 #about {
     height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -192,6 +195,8 @@ li:hover {
     #about {
         height: auto;
         width: 100vw;
+        display: flex;
+        justify-content: center;
     }
 
     .aboutme {

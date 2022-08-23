@@ -203,7 +203,6 @@ li:hover {
     }
 
     #about {
-        height: calc(100vh - 100px - 1rem);
         width: 100vw;
         display: flex;
         justify-content: center;

@@ -41,7 +41,7 @@ body {
 
 nav {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100px;
     width: 100%;
@@ -69,7 +69,7 @@ li a {
     display: block;
     color: rgb(89, 85, 87);
     text-align: center;
-    padding: 0.6rem 3rem;
+    padding: 0.6rem 2rem;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 400;
@@ -102,6 +102,7 @@ li:hover {
     align-items: center;
     gap: 1rem;
     height: calc(100vh - 100px);
+    padding: 0 0.5rem;
 }
 
 .main_text {
@@ -165,7 +166,7 @@ li:hover {
     width: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1270px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     *::-webkit-scrollbar,
     *::-webkit-scrollbar-thumb {
     width: 0px;
@@ -177,13 +178,18 @@ li:hover {
     }
 
     nav {
-        top: -100px;
-        height: 160px;
+        top: -70px;
+        height: 140px;
         background-color: rgba(255, 255, 255, 1);
         flex-direction: column;
-        justify-content: left;
-        align-items: stretch;
-        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 1rem 1rem;
+    }
+
+    .active {
+        top: 0px;
     }
 
     .img_nav {
@@ -191,23 +197,20 @@ li:hover {
     }
 
     ul {
-        width: 70vw;
-        text-align: center;
-        float: inline-start;
-        margin-left: 2.5rem;
-        margin-bottom: 0;
+        width: 90vw;
+        margin-bottom: 1rem;
     }
 
     li {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 
     li a {
         font-size: 1rem;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 0.3rem;
     }
 
-    .nav_mobile {
+    #nav_mobile {
         width: 45px;
         display: block;
         border: 3px solid rgba(116, 77, 77, 0.5);
@@ -216,7 +219,7 @@ li:hover {
         -webkit-transition: all 0.5s;
     }
 
-    .nav_mobile div {
+    #nav_mobile div {
         height: 4px !important;
         background: rgba(116, 77, 77, 0.5);
         margin: 4px 0px 4px 0px;
@@ -233,7 +236,7 @@ li:hover {
         width: 15px;
     }
       
-    .nav_mobile:hover div {
+    #nav_mobile:hover div {
         width: 30px;
     }
 

@@ -141,11 +141,28 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
+    width: 100vw;
 }
 
 .aboutme img {
     width: 50%;
+}
+
+.aboutme_text h2 {
+    text-align: center;
+    text-shadow: 2px 2px rgba(116, 77, 77, 0.1);
+    margin-bottom: 2rem;
+}
+
+.aboutme_text p {
+    text-align: justify;
+}
+
+.aboutme_text p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1270px) {
@@ -160,12 +177,25 @@ li:hover {
     }
 
     nav {
+        top: -100px;
+        height: 160px;
         background-color: rgba(255, 255, 255, 1);
+        flex-direction: column;
+        justify-content: left;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .img_nav {
+        display: none;
     }
 
     ul {
+        width: 70vw;
         text-align: center;
         float: inline-start;
+        margin-left: 2.5rem;
+        margin-bottom: 0;
     }
 
     li {
@@ -177,13 +207,39 @@ li:hover {
         padding: 0.4rem 1rem;
     }
 
-    .img_nav {
-        display: none;
+    .nav_mobile {
+        width: 45px;
+        display: block;
+        border: 3px solid rgba(116, 77, 77, 0.5);
+        padding: 5px 5px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+
+    .nav_mobile div {
+        height: 4px !important;
+        background: rgba(116, 77, 77, 0.5);
+        margin: 4px 0px 4px 0px;
+        border-radius: 25px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+
+    .two {
+        width: 10px;
+    }
+      
+    .three {
+        width: 15px;
+    }
+      
+    .nav_mobile:hover div {
+        width: 30px;
     }
 
     .container_main {
         height: auto;
-        width: 100vw;
+        width: 95vw;
         padding: 0 1rem;
         flex-direction: column-reverse;
         gap: 0;
@@ -200,11 +256,11 @@ li:hover {
     }
 
     .img_container img {
-        width: 300px;
+        width: 290px;
     }
 
     #about {
-        width: 100vw;
+        width: 95vw;
         display: flex;
         justify-content: center;
     }

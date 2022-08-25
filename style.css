@@ -79,7 +79,7 @@ li a {
     letter-spacing: 0.5px;
 }
 
-li:hover {
+.is-active {
     border-radius: 10%;
     background-color: rgba(196, 150, 150, 0.6);
     box-shadow: 0 0 5px 3px rgba(196, 150, 150, 0.6);

@@ -17,4 +17,16 @@ function showMobileNav() {
     }
 }
 
+const anchors = Array.from(document.querySelectorAll('a'))
+
+anchors.forEach(a => {
+  a.addEventListener('click', function(e) {
+    anchors.forEach(a => {
+      a.classList.remove('is-active')
+    })
+
+    e.currentTarget.classList.add('is-active')
+  })  
+})
+
 nav_button.addEventListener('click', showMobileNav);

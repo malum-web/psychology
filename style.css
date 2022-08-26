@@ -166,6 +166,29 @@ li a {
     width: 100%;
 }
 
+#up {
+    display: none;
+    position: fixed; 
+    width: 3rem;
+    height: 3rem;
+    bottom: 1rem; 
+    right: 2rem; 
+    z-index: 99; 
+    border: 2px solid rgba(116, 77, 77, 0.4); 
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.4); 
+    color: rgb(116, 77, 77);
+    cursor: pointer; 
+    border-radius: 100%; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+  
+#up:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(116, 77, 77, 0.4);
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
     *::-webkit-scrollbar,
     *::-webkit-scrollbar-thumb {

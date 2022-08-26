@@ -4,6 +4,8 @@ let buttonUp = document.getElementById("up");
 
 const anchors = Array.from(document.querySelectorAll('a'))
 
+
+// Show navbar on mobile on click 
 function showMobileNav() {
     if (navbar.classList.contains("active")) {
         navbar.classList.remove('active');
@@ -12,6 +14,8 @@ function showMobileNav() {
     }
 }
 
+
+// Navbar background color 
 anchors.forEach(a => {
   a.addEventListener('click', function(e) {
     anchors.forEach(a => {
@@ -23,7 +27,7 @@ anchors.forEach(a => {
 })
 
 
-
+// Button up 
 function scrollFunction() {
   if (window.scrollY > 20) {
     buttonUp.style.display = "block";

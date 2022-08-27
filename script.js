@@ -1,31 +1,25 @@
 let nav_button = document.getElementById('nav_mobile');
 let navbar = document.getElementById('navbar');
 let buttonUp = document.getElementById("up");
+let mainNavLinks = document.querySelectorAll("nav ul li a");
 
-const anchors = Array.from(document.querySelectorAll('a'))
+// tracking on scroll a
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
 
+  mainNavLinks.forEach(a => {
+    let section = document.querySelector(a.hash);
 
-// Show navbar on mobile on click 
-function showMobileNav() {
-    if (navbar.classList.contains("active")) {
-        navbar.classList.remove('active');
+    if (
+      section.offsetTop - 140 <= fromTop &&
+      section.offsetTop - 140 + section.offsetHeight - 140 > fromTop
+    ) {
+      a.classList.add("is-active");
     } else {
-        navbar.classList.add('active');
+      a.classList.remove("is-active");
     }
-}
-
-
-// Navbar background color 
-anchors.forEach(a => {
-  a.addEventListener('click', function(e) {
-    anchors.forEach(a => {
-      a.classList.remove('is-active')
-    })
-
-    e.currentTarget.classList.add('is-active')
-  })  
-})
-
+  });
+});
 
 // Button up 
 function scrollFunction() {

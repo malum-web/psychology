@@ -189,6 +189,21 @@ li a {
     background-color: rgba(116, 77, 77, 0.4);
 }
 
+/* Offer */
+
+#offer {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact */
+
+#contact {
+    height: calc(100vh - 100px); 
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
     *::-webkit-scrollbar,
     *::-webkit-scrollbar-thumb {

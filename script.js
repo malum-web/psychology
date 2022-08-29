@@ -3,6 +3,14 @@ let navbar = document.getElementById('navbar');
 let buttonUp = document.getElementById("up");
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 
+
+function showMobileNav() {
+  if (navbar.classList.contains("active")) {
+      navbar.classList.remove('active');
+  } else {
+      navbar.classList.add('active');
+  }
+}
 // tracking on scroll a
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY;

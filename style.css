@@ -198,6 +198,10 @@ li a {
     align-items: center;
 }
 
+.child ul {
+    list-style: circle;
+}
+
 /* Contact */
 
 #contact {

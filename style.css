@@ -29,7 +29,7 @@ html {
   
 body {
     width: 100vw;
-    height: 300vh;
+    height: auto;
     padding-top: 110px;
     background-color: rgb(214, 214, 214);
     font-family: 'Poppins', sans-serif;
@@ -191,16 +191,81 @@ li a {
 
 /* Offer */
 
-#offer {
+/* #offer {
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.child ul {
-    list-style: circle;
+.offer_container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+    background-color: rgb(239, 239, 239);
+    box-shadow: 0 0 5px 3px rgba(239, 239, 239, 0.6);
+    border-radius: 15px;
 }
+
+.button_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.button_offer button {
+    width: 12rem;
+    height: 3rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgb(116, 77, 77);
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(196, 150, 150, 0.6);
+    box-shadow: 0 0 5px 3px rgba(196, 150, 150, 0.6);
+}
+
+.button_active {
+    transform: scale(1.1);
+    background-color: rgb(238, 204, 204) !important;
+    box-shadow: 0 0 5px 3px rgb(238, 204, 204) !important;
+}
+
+.button_offer button:hover {
+    background-color: rgb(238, 204, 204);
+    box-shadow: 0 0 5px 3px rgb(238, 204, 204);
+}
+
+.button_offer button:active {
+    transform: scale(0.98);
+}
+
+.child ul li{
+    list-style: circle;
+    display: list-item;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.adult {
+    display: none;
+}
+
+.family {
+    display: none;
+}
+
+.foster_families {
+    display: none;
+} */
 
 /* Contact */
 
@@ -220,7 +285,7 @@ li a {
     }
 
     nav {
-        top: -70px;
+        top: -80px;
         height: 140px;
         background-color: rgba(255, 255, 255, 1);
         flex-direction: column;
@@ -318,4 +383,40 @@ li a {
     .aboutme img {
         width: 300px;
     }
+
+    /* #offer {
+        width: 90vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+
+    .offer_container {
+        height: auto;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .button_offer {
+        gap: 1.5rem;
+    }
+
+    .button_offer button {
+        width: 6.5rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .text_offer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child ul  {
+        display: inline;
+        width: 80%;
+        text-align: center;
+        float: none;
+        margin: 0;
+    } */
 }

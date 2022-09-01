@@ -249,15 +249,23 @@ li a {
     transform: scale(0.98);
 }
 
-.child ul li{
-    list-style: none;
+.text_offer ul {
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+
+.text_offer ul li{
     display: list-item;
+    list-style: none;
     float: none;
     margin-right: 0;
     margin-bottom: 1rem;
 }
 
-.child ul li::before {
+.text_offer ul li::before {
     content: "\274D";
     color: rgb(116, 77, 77);
     font-weight: bold;
@@ -265,6 +273,10 @@ li a {
     width: 1rem;
     margin-left: -1rem;
     padding-right: 0.5rem;
+}
+
+.child {
+    display: block;
 }
 
 .adult {

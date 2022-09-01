@@ -2,6 +2,11 @@ let nav_button = document.getElementById('nav_mobile');
 let navbar = document.getElementById('navbar');
 let buttonUp = document.getElementById("up");
 let mainNavLinks = document.querySelectorAll("nav ul li a");
+let offerButtons = document.querySelectorAll(".offer_button");
+let child = document.getElementById('child');
+let adult = document.getElementById('adult');
+let family = document.getElementById('family');
+let fosterFamilies = document.getElementById('foster_families');
 
 
 function showMobileNav() {
@@ -29,6 +34,50 @@ window.addEventListener("scroll", event => {
   });
 });
 
+// offer change button 
+function changeOfferButton(e) {
+  for (let i = 0; i < offerButtons.length; i++) {
+    const item = offerButtons[i];
+    item.classList.remove('button_active');
+  }
+  e.target.classList.add('button_active');
+}
+
+// offer change text
+
+function changeText(item){
+  try {
+  if (item.textContent === 'Dzieci') {
+    child.style.display = "block";
+    adult.style.display = "none";
+    family.style.display = "none";
+    fosterFamilies.style.display = "none";
+  } else if (item.textContent === 'Dorośli') {
+    adult.style.display = "block";
+    child.style.display = "none";
+    family.style.display = "none";
+    fosterFamilies.style.display = "none";
+  } else if (item.textContent === 'Rodziny') {
+    adult.style.display = "none";
+    child.style.display = "none";
+    family.style.display = "block";
+    fosterFamilies.style.display = "none";
+  } else if (item.textContent === 'Rodziny Zastępcze') {
+    adult.style.display = "none";
+    child.style.display = "none";
+    family.style.display = "none";
+    fosterFamilies.style.display = "block";
+  } else {
+    child.style.display = "none";
+    adult.style.display = "none";
+    family.style.display = "none";
+    fosterFamilies.style.display = "none";
+  } }
+  catch (error) {
+    console.error(error, item);
+  }
+}
+
 // Button up 
 function scrollFunction() {
   if (window.scrollY > 20) {
@@ -36,6 +85,11 @@ function scrollFunction() {
   } else {
     buttonUp.style.display = "none";
   }
+}
+
+for (let i = 0; i < offerButtons.length; i++ ) {
+  const item = offerButtons[i];
+  item.addEventListener('click', changeOfferButton)
 }
 
 document.addEventListener("scroll", () => {

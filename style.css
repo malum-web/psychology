@@ -334,7 +334,7 @@ iframe {
     }
 
     nav {
-        top: -80px;
+        top: -70px;
         height: 140px;
         background-color: rgba(255, 255, 255, 1);
         flex-direction: column;
@@ -437,6 +437,7 @@ iframe {
         width: 95vw;
         height: 100vh;
         padding: 1rem;
+        margin-left: 0.5rem;
     }
 
     .offer_container {
@@ -469,5 +470,15 @@ iframe {
         text-align: center;
         float: none;
         margin: 0;
+    }
+
+    .contact_wrapper {
+        width: 95vw;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .map {
+        display: none;
     }
 }

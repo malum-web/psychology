@@ -9,6 +9,13 @@ let family = document.getElementById('family');
 let fosterFamilies = document.getElementById('foster_families');
 
 
+// Overflow Elements
+document.querySelectorAll('*').forEach(el => {
+  if (el.offsetWidth > document.documentElement.offsetWidth) {
+      console.log('Found the worst element ever: ', el);
+  }
+});
+
 function showMobileNav() {
   if (navbar.classList.contains("active")) {
       navbar.classList.remove('active');

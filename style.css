@@ -328,8 +328,21 @@ iframe {
     width: 1.5rem;
 }
 
+.social_media a {
+    text-decoration: none;
+    color: rgb(116, 77, 77);
+}
+
+.social_media a:hover {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
 .social_media p {
-    text-align: justify;
+    display: flex;
+    text-align: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
